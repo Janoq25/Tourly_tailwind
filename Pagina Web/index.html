@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://kit.fontawesome.com/cb87dfdee0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class=" bg-white text-black dark:bg-slate-800 dark:text-white justify-center  ">
+    <header class="fixed w-screen bg-transparent dark:bg-slate-800 z-50">
+      <div class="flex w-full  max-w-screen-2xl items-center  px-10 py-2  justify-between mx-auto" >
+        <a href="" class="flex w-1/2 items-center space-x-1">
+            <img class="w-32" src="img/tourly1.png" alt="">
+        </a>
+        <div class="box-border md:hidden flex justify-end w-1/2">
+            <button id="menu-toggle" class="focus:outline-none w-6 hover:bg-gray-600 hover:text-white dark:hover:bg-white dark:hover:text-black hover:rounded-md md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="menu" class="hidden fixed top-14 right-4 w-full max-w-xs  rounded-lg shadow-lg p-6 text-base font-semibold  text-black dark:bg-slate-800 md:bg-inherit dark:highlight-white/5 z-50  md:flex md:static  md:top-0 md:shadow-none md:max-w-none md:w-1/2 md:p-0 md:justify-end">
+            <ul id="opciones-menu" class=" md:flex md:space-x-8 md:text-white text-black dark:text-white">
+                <li class="my-4"><a href="#" class="hover:text-red-500 inicio">Inicio</a></li>
+                <li class="my-4"><a href="#lugares" class="hover:text-red-500 lugares">Lugares</a></li>
+                <li class="my-4"><a href="#puntuacion" class="hover:text-red-500 puntuacion">Puntuación</a></li>
+                <li class="my-4"><a href="#noticias" class="hover:text-red-500 noticias">Noticias</a></li>
+                <li class="my-4"><a href="#testimonios" class="hover:text-red-500 testimonios">Testimonios</a></li>
+            </ul>
+            <div id="langs" class="langs px-0 flex text-black  md:py-3 md:px-6 md:text-white dark:text-white">
+              <a href="#" language="español" class="active">ESP</a>
+              <a href="#" language="ingles">ENG</a>
+              <a href="#" language="portugues">POR</a>
+              
+            </div>
+            <div  class="flex items-center pt-1 pb-4 md:pb-0 md:pt-0 md:pl-8">
+                <p class="md:hidden text-black  dark:text-white Apariencia">Apariencia:</p>
+                <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+        </div>
+        
+      </div>
+    </header>
+
+    <main>
+        <section id="principal" class="" >
+            <div id="slogan" class="flex flex-col text-white text-center h- justify-center space-y-3 px-10 max-w-screen-2xl mx-auto">
+              <h1 class="text-7xl  font-semibold pb-2">
+                <span class="text-red-500 sloganprincipal">Conoce nuevas culturas</span>
+              </h1>
+              <h3 class="text-3xl slogansec">
+                ¡Planea tus vacaciones!
+              </h3>
+            </div>
+        </section>
+        <section class="bg-red-50 dark:bg-slate-900">
+          <div class="flex flex-col  items-center  py-10 max-w-screen-2xl mx-auto">
+            
+            
+            <div class="flex flex-col space-y-8 items-center lg:flex lg:flex-row lg:space-y-0 lg:space-x-10 lg:px-20">
+              <div class="flex px-8 py-8  space-x-4 mx-12  max-w-lg  lg:mx-0">
+                <i class="fa-regular fa-star pb-8 text-3xl" style="color: #ef4444;"></i>
+                <div>
+                  <h2 class="font-semibold pb-2 text-xl rt1">Años de experiencia</h2>
+                  <p class="rp1">Tenemos más de 7 años en el sector turístico nacional</p>
+                </div>
+              </div>
+              <div class="flex px-8 py-8  space-x-4 mx-12  max-w-lg  lg:mx-0">
+                <i class="fa-solid fa-money-bill-wave pb-8 text-3xl" style="color: #ef4444;"></i>
+                <div>
+                  <h2 class="font-semibold pb-2 text-xl  rt2">Precios accesibles</h2>
+                  <p class="rp2">Contamos con los costos más competitivos en del sector</p>
+                </div>
+              </div>
+              <div class="flex px-8 py-8  space-x-4 mx-12  max-w-lg lg:mx-0">
+                <i class="fa-solid fa-globe pb-8 text-3xl" style="color: #ef4444;"></i>
+                <div>
+                  <h2 class="font-semibold pb-2 text-xl rt3">A todo el Mundo</h2>
+                  <p class="rp3">Cubrimos los lugares más hermosos del país</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="lugares" class="container mx-auto">
+          <h2 class="text-4xl pt-36 pb-16 text-3xl font-semibold text-center mx-12 lt">Experimenta la naturaleza salvaje en todo su esplendor
+          </h2>
+          <div class="grid grid-cols-1 mx-4 md:grid-cols-2 gap-4 lg:grid-cols-9">
+            <div class="pb-4 text-xl  pr-4 lg:col-span-2 col-span-1 bg-slate-800 h-80 rounded-md shadow-md  bg-static flex justify-end items-end text-white l1" style="background-image: linear-gradient(
+              0deg,
+              rgba(0,0,0,0.5),
+              rgba(0,0,0,0.4)
+            ),
+            url(https://i.pinimg.com/originals/c2/5e/ff/c25eff82ca937a04db793e64c78fc217.png);
+            background-size: cover; ">El gran cañon</div>
+            <div class="pb-4 text-xl  pr-4 lg:col-span-5 col-span-1 bg-slate-800 h-80 rounded-md shadow-md  bg-static flex justify-end items-end text-white l2" style="background-image: linear-gradient(
+              0deg,
+              rgba(0,0,0,0.5),
+              rgba(0,0,0,0.4)
+            ),
+            url(https://www.exoticca.com/es/blog/wp-content/uploads/2021/11/Japan-sightseeing-BLOG-header.png);
+            background-size: cover;">Japon</div>
+            <div class="pb-4 text-xl  pr-4 lg:col-span-2 md:col-span-2 col-span-1 bg-slate-800 h-80 rounded-md shadow-md  bg-static flex justify-end items-end text-white l3" style="background-image: linear-gradient(
+              0deg,
+              rgba(0,0,0,0.5),
+              rgba(0,0,0,0.4)
+            ),
+            url(https://media.traveler.es/photos/613768f03decec3303bab7da/1:1/w_1050,h_1050,c_limit/158835.jpg);
+            background-size: cover;">Cataratas de iguazu</div>
+            <div class="pb-4 text-xl  pr-4 lg:col-span-3 md:col-span-1 bg-slate-800 h-80 rounded-md shadow-md  bg-static flex justify-end items-end text-white l4" style="background-image: linear-gradient(
+              0deg,
+              rgba(0,0,0,0.5),
+              rgba(0,0,0,0.4)
+            ),
+            url(https://i.pinimg.com/736x/41/37/23/41372366d81cccb767af0b5f7f6dd5ab.jpg);
+            background-size: cover;">Montañas nevadas</div>
+            <div class="pb-4 text-xl  pr-4 lg:col-span-3 md:col-span-1 bg-slate-800 h-80 rounded-md shadow-md  bg-static flex justify-end items-end text-white l5" style="background-image: linear-gradient(
+              0deg,
+              rgba(0,0,0,0.5),
+              rgba(0,0,0,0.4)
+            ),
+            url(https://media.glamour.mx/photos/6190bef9a6e030d648105ee1/master/pass/159281.jpg);
+            background-size: cover;">Castillo de España</div>
+            <div class="pb-4 text-xl  pr-4 lg:col-span-3 md:col-span-2 bg-slate-800 h-80 rounded-md shadow-md  bg-static flex justify-end items-end text-white l6" style="background-image: linear-gradient(
+              0deg,
+              rgba(0,0,0,0.5),
+              rgba(0,0,0,0.4)
+            ),
+            url(https://w0.peakpx.com/wallpaper/484/861/HD-wallpaper-tahiti-ocean-reef-island.jpg);
+            background-size: cover;">Haiti</div>
+            
+          </div>
+        </section>
+
+        <section  id="puntuacion" class="flex flex-col bg-white items-center dark:bg-slate-800 pb-48 mt-32">
+          <h2 id="titulo" class=" text-4xl pt-12 pb-8 text-3xl font-semibold text-center mx-12 pt">Cada experiencia tiene una riqueza escondida ¡Encuéntrala!</h2>
+         
+          <div class="flex flex-col space-y-8 items-center sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:space-y-0 lg:space-x-4 lg:px-20">
+            <div class=" px-4 py-8 bg-white  mx-12 dark:bg-slate-800 max-w-lg shadow-md lg:mx-0">
+              <img class="w-48 h-40 mb-4" src="img/d1.webp" alt="">
+              <div class="flex justify-between justify-center">
+                <h2 class="font-semibold pb-2 ">Haiti</h2>
+                <div>
+                  <i class="fa-solid fa-star" style="color: #ef4444;"></i>4.5
+                </div>
+              </div>
+              
+            </div>
+            <div class=" px-4 py-8 bg-white  mx-12 dark:bg-slate-800 max-w-lg shadow-md lg:mx-0">
+              <img class="w-48 h-40 mb-4" src="img/d2.avif" alt="">
+              <div class="flex justify-between justify-center">
+                <h2 class="font-semibold pb-2 ">Pisa</h2>
+                <div>
+                  <i class="fa-solid fa-star" style="color: #ef4444;"></i>4.5
+                </div>
+              </div>
+              
+            </div>
+            <div class=" px-4 py-8 bg-white  mx-12 dark:bg-slate-800 max-w-lg shadow-md lg:mx-0">
+              <img class="w-48 h-40 mb-4" src="img/d3.jpg" alt="">
+              <div class="flex justify-between justify-center">
+                <h2 class="font-semibold pb-2 ">Paris</h2>
+                <div>
+                  <i class="fa-solid fa-star" style="color: #ef4444;"></i>4.5
+                </div>
+              </div>
+              
+            </div>
+            <div class=" px-4 py-8 bg-white  mx-12 dark:bg-slate-800 max-w-lg shadow-md lg:mx-0">
+              <img class="w-48 h-40 mb-4" src="img/d4.webp" alt="">
+              <div class="flex justify-between justify-center">
+                <h2 class="font-semibold pb-2 ">India</h2>
+                <div>
+                  <i class="fa-solid fa-star" style="color: #ef4444;"></i>4.5
+                </div>
+              </div>
+              
+            </div>
+          </div>
+      </section>
+
+      <section id="noticias" class="mb-40">
+        <h2 class="text-4xl pt-12 pb-8 text-3xl font-semibold text-center mx-12 n">Entérate de lo que sucede en el mundo</h2>
+        <div  class="container bg-white  grid grid-cols-1 md:grid-cols-3 md:gap-x-6 gap-y-4 mx-auto px-4 md:bg-inherit md:shadow-none dark:bg-slate-800">
+          <div class="flex flex-col bg-white  text-center shadow-md items-center  py-10 px-6  space-y-6 md:bg-white md:shadow-md dark:bg-slate-800">
+              <img src="https://phantom-elmundo.unidadeditorial.es/009eac62ab9ab9b6716aaa9759158c70/resize/1300/assets/multimedia/imagenes/2023/12/11/17022953010064.jpg" alt="">
+              <h3 class="text-xl font-bold nt1">Los arboles de navidad mas bonitos</h3>
+              <p class="np1">No hay ciudad que se precie de vivir una auténtica Navidad si no luce un espectacular árbol en sus puntos más emblemáticos. No en vano, su descubrimiento es motivo suficiente...</p>
+              <a href="https://www.elmundo.es/album/viajes/el-baul/2023/12/23/6576f6ee21efa02f128b45a2.html"><button class="rounded-full bg-gray-300 dark:bg-gray-600 hover:bg-black hover:text-white py-2 w-28 detalles">Detalles</button></a>
+          </div>
+          <div class="flex flex-col shadow-md text-center items-center  py-10 px-6  space-y-6 bg-white md:shadow-md dark:bg-slate-800">
+              <img  src="https://phantom-elmundo.unidadeditorial.es/58b0a6f1208490e80441140de8d9c40d/resize/473/f/webp/assets/multimedia/imagenes/2023/12/07/17019438042776.jpg" alt="">
+              <h3 class="text-xl font-bold nt2">Tardes de roscón, noches de glamour</h3>
+              <p class="np2">Justo encima del popular letrero de Schweppes de la Gran Vía, con panorámicas despampanantes a Madrid y visión directa al reloj de la Puerta del Sol, el hotel...</p>
+              <a href="https://www.elmundo.es/viajes/hoteles/2023/12/16/657198d3e85ecebb068b4571.html"><button class="rounded-full bg-gray-300 dark:bg-gray-600 hover:bg-black hover:text-white py-2 w-28 detalles">Detalles</button></a>
+          </div>
+          <div class="flex flex-col shadow-md text-center items-center  py-10 px-6  space-y-6 bg-white md:shadow-md dark:bg-slate-800">
+              <img src="https://phantom-elmundo.unidadeditorial.es/501e30a78e866c52eb42d0b5af3a44ab/resize/473/f/webp/assets/multimedia/imagenes/2023/11/21/17005800639928.jpg" alt="">
+              <h3 class="text-xl font-bold nt3">Ciudades españolas, en el 'top 10'</h3>
+              <p class="np3">Que España es uno de los países más turísticos del mundo (no sale nunca del top ten) lo sabíamos. Pero no solo hablamos de las vacaciones de sol y playa, sino que...</p>
+              <a href="https://www.elmundo.es/viajes/el-baul/2023/12/18/6577105621efa0af628b456f.html"><button class="rounded-full bg-gray-300 dark:bg-gray-600 hover:bg-black hover:text-white py-2 w-28 detalles">Detalles</button></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonios" class="container mx-auto items-center pt-24 px-6 mb-40">
+        <h2 class="text-4xl font-bold text-center tt">Lo que dicen de  nosotros</h2>
+        <div class="grid mt-6 grid-cols-1 md:grid-cols-3  ">
+            <div class="flex flex-col   text-center items-center  py-10 px-2 space-y-3">
+                <img class="rounded-full shadow-md w-40" src="img/foto1.jpg " alt="">
+                <h3 class="text-lg font-bold">Maria Garcia</h3>
+                <p class="font-medium"> Francia</p>
+                <p class="tp1">Tourly superó nuestras expectativas. Elegí un destino que no conocía, y resultó ser un lugar increíble. El personal fue muy conocedor y nos ayudó a aprovechar al máximo nuestro tiempo. Recomiendo encarecidamente esta empresa a cualquiera que busque una experiencia de viaje única.</p>
+                <div>
+                    <i class="fa-solid fa-star" style="color: #ef4444;"></i>
+                    <i class="fa-solid fa-star" style="color: #ef4444;"></i>
+                    <i class="fa-solid fa-star" style="color: #ef4444;"></i>
+                </div>
+            </div>
+            <div class="flex flex-col   text-center items-center  py-10 px-2 space-y-3">
+                <img class="rounded-full shadow-md w-40" src="img/foto2.jpg" alt="">
+                <h3 class="text-lg font-bold">Lisa Rodriguez</h3>
+                <p class="font-medium">Barcelona</p>
+                <p class="tp2">Tourly fue la mejor decisión que tomamos para nuestro viaje. Elegí un destino que siempre había querido visitar, y Tourly hizo que todo fuera muy fácil. El viaje fue perfecto, y el personal fue muy atento y servicial. No puedo decir lo suficiente sobre lo bien que nos trataron.</p>
+                <div>
+                    <i class="fa-solid fa-star" style="color: #ef4444;"></i>
+                    <i class="fa-solid fa-star" style="color: #ef4444;"></i>
+                    <i class="fa-solid fa-star" style="color: #ef4444;"></i>
+                </div>
+            </div>
+            <div class="flex flex-col   text-center items-center  py-10 px-2 space-y-3">
+                <img class="rounded-full shadow-md w-40" src="img/foto3.jpg" alt="">
+                <h3 class="text-lg font-bold">Patrick Paredes</h3>
+                <p class="font-medium">Cancun</p>
+                <p class="tp3">Tuve una experiencia increíble con Tourly. Elegí un destino al azar, y resultó ser un lugar maravilloso. El personal fue muy amable y servicial, y el viaje fue muy bien organizado. Recomiendo encarecidamente esta empresa a cualquiera que busque unas vacaciones memorables.</p>
+                <div>
+                    <i class="fa-solid fa-star" style="color: #ef4444;"></i>
+                    <i class="fa-solid fa-star" style="color: #ef4444;"></i>
+                    <i class="fa-regular fa-star" style="color: #ef4444;"></i>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+  
+    </main>
+
+    
+
+    <footer class="bg-slate-900 rounded-lg">
+      <div class="max-w-screen-2xl mx-auto text-gray-200  py-6 px-4 w-full">
+        <div class="   pt-10 pl-4">
+          <p class=" px-5 ft">Hacer del mundo un lugar mejor mediante la construcción de jerarquías elegantes.</p>
+          <div class="flex items-center mt-6 pl-4">
+              <a href="#" class="text-gray-400 hover:text-white ml-1 mr-4 text-xl md:mr-5"><i class="fab fa-github"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white mx-4 text-xl md:mr-5"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white mx-4 text-xl md:mr-5"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white mx-4 text-xl md:mr-5"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white mx-4 text-xl md:mr-5"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+        <div class="flex flex-wrap px-4 mt-10 ">
+          <div class="flex flex-col space-y-8 w-1/2 p-5 md:w-1/4 ">
+            <a href="#" class="hover:text-white fsoluciones"><b>Soluciones</b></a>
+            <a href="#" class="hover:text-white fmercado">Mercado</a>
+            <a href="#" class="hover:text-white fanalisis">Analisis</a>
+            <a href="#" class="hover:text-white fcomercio">Comercio</a>
+            <a href="#" class="hover:text-white finsignias">Insignias</a>
+          </div>
+          <div class="flex flex-col space-y-8 w-1/2 p-5 md:w-1/4 ">
+            <a href="#" class="hover:text-white fsoluciones"><b>Soluciones</b></a>
+            <a href="#" class="hover:text-white fmercado">Mercado</a>
+            <a href="#" class="hover:text-white fanalisis">Analisis</a>
+            <a href="#" class="hover:text-white fcomercio">Comercio</a>
+            <a href="#" class="hover:text-white finsignias">Insignias</a>
+          </div>
+          <div class="flex flex-col space-y-8 w-1/2 p-5 md:w-1/4 ">
+            <a href="#" class="hover:text-white fsoluciones"><b>Soluciones</b></a>
+            <a href="#" class="hover:text-white fmercado">Mercado</a>
+            <a href="#" class="hover:text-white fanalisis">Analisis</a>
+            <a href="#" class="hover:text-white fcomercio">Comercio</a>
+            <a href="#" class="hover:text-white finsignias">Insignias</a>
+          </div>
+          <div class="flex flex-col space-y-8 w-1/2 p-5 md:w-1/4 ">
+            <a href="#" class="hover:text-white fsoluciones"><b>Soluciones</b></a>
+            <a href="#" class="hover:text-white fmercado">Mercado</a>
+            <a href="#" class="hover:text-white fanalisis">Analisis</a>
+            <a href="#" class="hover:text-white fcomercio">Comercio</a>
+            <a href="#" class="hover:text-white finsignias">Insignias</a>
+          </div>
+          
+        </div>
+        
+      </div>
+    </footer>
+    <div class="fixed bottom-10 right-10 bg-white w-14 h-14 rounded-full">
+      <a href="https://api.whatsapp.com/send/?phone=962586777&text&type=phone_number&app_absent=0"
+         class="text-green-600 hover:text-green-800 text-5xl p-2  rounded-full shadow-lg"
+         target="_blank"
+         rel="noopener noreferrer"
+      >
+          <i class="fab fa-whatsapp"></i>
+      </a>
+  </div>
+    <script src="JS/funciones.js"></script>
+</body>
+</html>
