@@ -1,0 +1,63 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Dancing+Script&family=Fjalla+One&family=Kanit:wght@100&family=Righteous&family=Sevillana&display=swap');
+
+#principal{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.65)
+    ),
+    url("https://www.peru.travel/Contenido/General/Imagen/es/302/1.1/Vinicunca.jpg");
+    background-size: cover;
+   
+}
+
+#slogan{
+    height: 800px;
+}
+
+#principal h1{
+    font-family: 'Sevillana', cursive;
+    
+}
+
+#noticias h2{
+    font-family: 'Sevillana', cursive;
+    
+}
+
+#puntuacion #titulo{
+    font-family: 'Sevillana', cursive;
+}
+
+#lugares h2{
+    font-family: 'Sevillana', cursive;
+}
+
+#testimonios h2{
+    font-family: 'Sevillana', cursive;
+}
+
+.langs{
+    text-align: center;
+
+    
+    gap: 5px;
+  }
+  .langs a{
+    text-decoration: none;
+    padding: 3px;
+    font-weight: 650;
+    transition: .3s linear;
+    border-radius: 10%;
+  }
+  .langs a:hover{
+    background: #ef4444;
+  }
+  .langs a.active{
+    background: #ef4444;
+  }
+  .idioma{
+    width: 40px;
+  }
+
